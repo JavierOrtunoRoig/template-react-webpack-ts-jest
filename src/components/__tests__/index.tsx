@@ -3,6 +3,7 @@ import Button from "../Button";
 
 describe("Button", () => {
   it("renders", () => {
-    render(<Button text="hello" onClick={() => {}} />);
+    const { getByText } = render(<Button text="Welcome" onClick={() => {}} />);
+    expect(getByText("Welcome"))
   });
 });
