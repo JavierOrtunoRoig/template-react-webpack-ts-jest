@@ -1,3 +1,5 @@
+import "../styles/button.scss"
+
 interface Props {
   text: string;
   onClick: () => void;
@@ -5,7 +7,7 @@ interface Props {
 
 const Button = ({ text, onClick }: Props) => {
   return (
-    <button style={{ height: "2.5rem", marginLeft: "1rem" }} onClick={onClick}>
+    <button className="button__button" onClick={onClick}>
       {text}
     </button>
   );
