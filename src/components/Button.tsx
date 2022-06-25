@@ -1,11 +1,9 @@
-import React from "react";
 interface Props {
   text: string;
   onClick: () => void;
 }
 
-const Button: React.FC<Props> = (props) => {
-  const { text, onClick } = props;
+const Button = ({ text, onClick }: Props) => {
   return (
     <button style={{ height: "2.5rem", marginLeft: "1rem" }} onClick={onClick}>
       {text}
